@@ -1,0 +1,45 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Hey!</h1>
+      <p>
+        My name is Matej. I know, It's hard to pronounce, call me <code
+          >matt</code
+        > or
+        <code>matthew</code> for short.
+      </p>
+      <p>
+        I do all kinds of stuff, from
+        websites to infrastructure, to saving legacy codebases to inventing my
+        own <s>side projects</s> start-ups. I currently work @ <a
+          href="https://www.linkedin.com/company/betsys/">betsys</a
+        >, as backend developer.
+      </p>
+      <p>
+        Throughout my carreer I did all bunch of stuff from making Mongo to
+        Postgres realtime replication (closed source), to optimizing social
+        network platform migrating it from <a href="https://parseplatform.org/"
+          >Parse</a
+        > to Golang, to making desktop apps like kubernetes manager for private use.
+        I'm currently working on <strong>waythrough</strong>, which is platform
+        providing SSL tunnels.
+      </p>
+      <p>
+				Also. I hate scrum.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
